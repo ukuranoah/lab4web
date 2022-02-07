@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignement 4</title>
+    
+
+    <style>
+        .still, .rotate, .shrink {
+            color: red;
+            display: inline-block;
+            font-size: 60px;
+            padding: 1rem;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .rotate {
+            animation: rotate 1s infinite ease;
+        }
+
+        .shrink {
+            animation: shrink 1s infinite ease;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateZ(-30deg);
+            }
+            50% {
+                transform: rotateZ(30deg);
+            }
+            100% {
+                transform: rotateZ(0);
+            }
+        }
+
+        @keyframes shrink {
+            0% {
+                transform: scale(0.8);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        td{
+            border:4px solid black;
+            width:50px;
+            text-align:center;
+
+        }
+        tr{
+            height:40px;
+        }
+        .textColor {
+            font-weight: bold;
+            padding:0 10px;
+        }
+        body{
+            background-color:rgb(26, 79, 122);
+        
+            
+        }
+        table{
+            margin:auto;
+            border-spacing:10px;
+        }
+        tbody{
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        {{{body}}}
+    </div>
+</body>
+</html>

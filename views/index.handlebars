@@ -1,0 +1,30 @@
+
+<div>
+    <h1 style="text-align:center">Generate a Color Grid!</h1>
+
+    <form action="/" method="post">
+        <div style="text-align:center;">
+            <label>Grid Size</label>
+            <select name="grid">
+                {{#select grid}}
+                    <option value="3">3 x 3</option>
+                    <option value="4">4 x 4</option>
+                    <option value="5">5 x 5</option>
+                    <option value="10">10 x 10</option>
+                    <option value="20">20 x 20</option>
+                {{/select}}
+            </select>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <button type="submit">Submit</button>
+        </div>
+
+        
+    </form>
+
+    <div>
+        {{{buildGrid grid grid}}}
+    </div>
+
+</div>
